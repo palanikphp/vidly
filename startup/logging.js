@@ -17,8 +17,6 @@ module.exports = function() {
     })
   );
 
-
-  //TODO: asyncronouse (promise) uncaughtException callled but node process terminate which should not happen
   // process.on("unhandledRejection", (ex) => {
   //   console.log("WE GOT AN UNHANDELED REJECTION", ex);
   //   winston.error(ex.message, ex);
