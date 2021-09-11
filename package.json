@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll --verbose"
   },
   "author": "",
   "license": "ISC",
@@ -18,9 +18,13 @@
     "joi-password-complexity": "^5.1.0",
     "jsonwebtoken": "^8.1.1",
     "lodash": "^4.17.21",
-    "md5": "^2.3.0",
+    "md5": "^2.3.0", 
     "mongoose": "^5.0.1",
+    "supertest": "^6.1.6",
     "winston": "^2.4.0",
     "winston-mongodb": "^3.0.0"
+  },
+  "devDependencies": {
+    "jest": "^27.1.0"
   }
 }

@@ -1,5 +1,5 @@
 const winston =  require("winston");
-require("winston-mongodb");
+//require("winston-mongodb");
 require("express-async-errors");
 
 module.exports = function() {
@@ -16,6 +16,10 @@ module.exports = function() {
       humanReadableUnhandledException: true,
     })
   );
+
+  process.on("unhandledRejection", (ex) => {
+   throw ex;
+  })
 
   // process.on("unhandledRejection", (ex) => {
   //   console.log("WE GOT AN UNHANDELED REJECTION", ex);
